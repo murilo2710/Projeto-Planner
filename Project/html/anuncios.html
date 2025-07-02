@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo+ | Anúncios</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Projeto-Planner/Project/css/anuncios.css">
+</head>
+<body>
+  <aside>
+    <nav>
+        <a href="/Projeto-Planner/Project/html/anunciante.html">
+            <i class='bx bx-home'></i>
+            <span class="nav-title">Criar Anúncios</span>
+        </a>
+        <a href="/Projeto-Planner/Project/html/anuncios.html">
+            <i class='bx bx-image'></i>
+            <span class="nav-title">Meus Anúncios</span>
+        </a>
+        <a href="/Projeto-Planner/Project/php/logout_anunciante.php">
+            <i class='bx bx-log-out'></i>
+            <span class="nav-title">Sair</span>
+        </a>
+    </nav>
+    <div class="perfil-sidebar">
+        <a href="/Projeto-Planner/Project/html/perfil_anunciante.html">
+            <div class="profile-photo-iniciais" id="profile-initials-sidebar">U</div>
+            <span class="nav-title">Perfil</span>
+        </a>
+    </div>
+</aside>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="header">
+                <div>
+                    <h1 class="title">Aqui estão todos os seus anúncios postados</h1>
+                    <p class="subtitle">Edite e visualize todas as informações</p>
+                </div>
+            </div>
+
+            <div class="ad-cards" id="ad-cards">
+
+                </div>
+            
+                
+                <div id="anuncios-dinamicos"></div>
+
+                <div id="editModal" class="modal" style="display:none;">
+                    <div class="modal-content">
+                      <span id="closeModal" style="cursor:pointer;">&times;</span>
+                      <h2>Editar Anúncio</h2>
+                      <form id="editForm">
+                        <input type="hidden" name="id_anuncio" id="edit-id" />
+                        <label for="edit-titulo">Título:</label><br/>
+                        <input type="text" id="edit-titulo" name="titulo" class="form-control" required /><br/><br/>
+                        
+                        <label for="edit-site">Site da empresa:</label><br/>
+                        <input type="text" id="edit-site" name="site_empresa" class="form-control" /><br/><br/>
+                        
+                        <label for="edit-categoria">Categoria:</label><br/>
+                        
+                        <select name="categoria" id="edit-categoria" class="form-control"> <br>
+                            <option value="">Selecione uma categoria</option> 
+                            <option value="moda">Moda e Vestuário</option>
+                            <option value="tecnologia">Tecnologia</option>
+                            <option value="casa">Casa e Decoração</option>
+                            <option value="beleza">Beleza e Cuidados Pessoais</option>
+                            <option value="alimentos">Outros</option>
+                        </select><br> <br>
+                        
+                        <label for="edit-duracao">Duração (dias):</label><br/>
+                        <select id="edit-duracao" name="duracao" class="form-control">
+                            <option value="7">7 dias</option>
+                            <option value="14">14 dias</option>
+                            <option value="30">30 dias</option>
+                            <option value="60">60 dias</option>
+                        </select><br/><br/>
+                        
+                        
+                        <button type="submit">Salvar</button>
+                      </form>
+                    </div>
+                  </div>
+                  
+                
+            </div>
+            
+              
+    </div>
+    <div id="comentarioModal" class="modal">
+        <div class="modal-content">
+          <span id="closeComentarioModal" class="close">&times;</span>
+          <h2>Comentário da Recusa</h2>
+          <p id="comentarioTexto"></p>
+        </div>
+      </div>
+    <script src="/Projeto-Planner/Project/js/anuncio.js"></script>
+    <script src="/Projeto-Planner/Project/js/atualizarperfil_anunciante.js"></script>
+    <script src="/Projeto-Planner/Project/js/listar_anuncios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

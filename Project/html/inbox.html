@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo+ | Respostas do Suporte</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/Projeto-Planner/Project/css/duvidas.css">
+</head>
+<body>
+    <aside>
+        <nav>
+            <a href="/Projeto-Planner/Project/html/home.html">
+                <i class='bx bx-home'></i>
+                <span class="nav-title">Home</span>
+            </a>
+            <a href="/Projeto-Planner/Project/html/inbox.html">
+                <i class='bx bxs-inbox'></i>
+                <span class="nav-title">Caixa de Entrada</span>
+            </a>
+            <a href="/Projeto-Planner/Project/html/disciplinas.html">
+                <i class='bx bx-book'></i>
+                <span class="nav-title">Disciplinas</span>
+            </a>
+            <a href="/Projeto-Planner/Project/html/disciplinas_notas.html">
+              <i class='bx bx-bar-chart'></i>
+              <span class="nav-title">Notas</span>
+          </a>
+            <a href="/Projeto-Planner/Project/html/ia.html">
+                <i class='bx bx-brain'></i>
+                <span class="nav-title">IA Estudo+</span>
+            </a>
+            <a href="/Projeto-Planner/Project/html/suporte.html">
+                <i class='bx bx-cog'></i>
+                <span class="nav-title">Suporte</span>
+            </a>
+            <a href="/Projeto-Planner/Project/php/logout.php">
+                <i class='bx bx-log-out'></i>
+                <span class="nav-title">Sair</span>
+            </a>
+        </nav>
+        <div class="perfil-sidebar">
+            <a href="/Projeto-Planner/Project/html/perfil.html">
+                <div class="profile-photo-iniciais" id="profile-initials-sidebar">U</div>
+                <span class="nav-title">Perfil</span>
+            </a>
+        </div>
+    </aside>
+    <div class="app-container">
+        <div class="inbox-container">
+            <div class="email-list" id="lista-respostas">
+              
+                <!-- Respostas serão carregadas aqui via PHP ou JavaScript -->
+            </div>
+
+            <div class="email-content">
+                <div class="email-title">Selecione uma resposta</div>
+                <div class="email-meta">
+                    <div class="sender-avatar">R</div>
+                    <div>
+                        <div class="sender-info">Estudo+ Suporte</div>
+                        <div class="email-time">---</div>
+                    </div>
+                </div>
+                <div class="email-body">
+                    <p>Clique em uma resposta à esquerda para ver os detalhes aqui.</p>
+                </div>
+                <div class="reply-section" style="display: none;">
+                    <h3>Resposta do Suporte</h3>
+                    <div class="resposta-suporte">
+                        <!-- A resposta será inserida aqui via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Projeto-Planner/Project/js/inbox.js"></script>
+    <script src="/Projeto-Planner/Project/js/atualizar_perfil.js"></script>
+
+</body>
+</html>
